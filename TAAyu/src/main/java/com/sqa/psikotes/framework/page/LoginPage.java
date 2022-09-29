@@ -1,6 +1,5 @@
 package com.sqa.psikotes.framework.page;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,14 +41,8 @@ public class LoginPage {
 	private WebElement btnOk;
 	
 	
-	public void loginValidOne(String username, String password) {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		this.txtUsername.sendKeys(username);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		this.txtPassword.sendKeys(password);
-	}
 	
-	public void loginValidTwo(String username, String password) throws InterruptedException {
+	public void loginValid(String username, String password) throws InterruptedException {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(username);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
@@ -69,10 +62,6 @@ public class LoginPage {
 	
 	public void clickButtonOk() {
 		btnOk.click();
-	}
-	
-	public void clickEnter() {
-		this.txtUsername.sendKeys(Keys.ENTER);
 	}
 }
 

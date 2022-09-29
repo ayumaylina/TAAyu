@@ -2,8 +2,6 @@ package com.sqa.psikotes.framework.runner;
 
 
 
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -11,7 +9,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.sqa.psikotes.framework.constant.Constants;
 import com.sqa.psikotes.framework.page.LoginPage;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,7 +38,7 @@ public class TestLoginValid {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
-		loginPage.loginValidTwo(username, password);
+		loginPage.loginValid(username, password);
 		extentTest.log(LogStatus.PASS, "admin_valid_username_and_password");
 
 	}

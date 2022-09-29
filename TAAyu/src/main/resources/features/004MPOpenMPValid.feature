@@ -2,10 +2,10 @@
 #Created Date : 29/9/2022
 #Modified Date : 
 Feature: Admin login valid ke web
-	Background:
-	    Given Admin go to page login
 
-	@tag1
-  Scenario: Admin login valid click button signin
-    When TSLP001001 admin enter username and password valid
-    Then TSLP001001 The system check credentsial login valid
+  @tag1
+  Scenario: TSMP001001 Admin buka halaman modul
+  	Given TSMP001001 admin berhasil login
+    When TSMP001001 admin klik menu task
+    And TSMP001001 admin klik submenu modul
+    Then TSMP001001 admin berhasil buka halaman modul

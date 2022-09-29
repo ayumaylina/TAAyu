@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-29T14:20:32 WIB" name="Default suite" finished-at="2022-09-29T14:22:00 WIB" duration-ms="88310">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-09-29T14:20:32 WIB" name="Default test" finished-at="2022-09-29T14:22:00 WIB" duration-ms="88310">
+      <class name="com.sqa.psikotes.framework.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-29T14:20:32 WIB" name="setUpClass" finished-at="2022-09-29T14:20:33 WIB" duration-ms="1084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@28e94c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-29T14:20:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-29T14:21:59 WIB" duration-ms="86216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSMP001001 Admin buka halaman modul"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin login valid ke web"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-29T14:21:59 WIB" name="tearDownClass" finished-at="2022-09-29T14:22:00 WIB" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sqa.psikotes.framework.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -3,8 +3,6 @@ package com.sqa.psikotes.framework.runner;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
