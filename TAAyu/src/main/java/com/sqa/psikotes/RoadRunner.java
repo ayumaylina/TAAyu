@@ -1,4 +1,4 @@
-package cucumber;
+package com.sqa.psikotes;
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.core.cli.Main;

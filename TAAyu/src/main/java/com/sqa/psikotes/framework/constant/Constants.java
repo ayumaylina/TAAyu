@@ -1,4 +1,4 @@
-package cucumber.framework.constant;
+package com.sqa.psikotes.framework.constant;
 
 public class Constants {
 
@@ -11,5 +11,7 @@ public class Constants {
 	public static final String SAFARI = "Safari";
 	public static final String URL = "https://sqa.peluangkerjaku.com/psy/";
 	public static final String GLOB_PARAM_DELAY = "n";
+	
+	
 	
 }
