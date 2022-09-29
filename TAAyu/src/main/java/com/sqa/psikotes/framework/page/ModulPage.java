@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sqa.psikotes.framework.connection.DriverSingleton;
 import com.sqa.psikotes.framework.constant.Constants;
+import com.sqa.psikotes.framework.utils.Utils;
 
 public class ModulPage extends LoginPage {
 	private WebDriver driver;
@@ -60,17 +61,20 @@ public class ModulPage extends LoginPage {
 	
 	//actual
 	public String getTxtModul() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return msgModul.getAttribute("value");
 	}
 	
 	//SEARCH 
 	public void search(String search) {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.tabSearch.sendKeys(search);
 	}
 	
 	public void enter() {
 		try {
 			Robot rbt = new Robot();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 			rbt.keyPress(KeyEvent.VK_ENTER);
 		} catch (AWTException e) {
 			e.printStackTrace();

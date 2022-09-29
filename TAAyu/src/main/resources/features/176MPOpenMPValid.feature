@@ -1,7 +1,8 @@
 #Author: Ayu
 #Created Date : 29/9/2022
 #Modified Date : 
-Feature: Admin login valid ke web
+#Feature: Admin login valid ke web
+Feature: Admin masuk ke halaman modul
 
   @tag1
   Scenario: TSMP001001 Admin buka halaman modul
