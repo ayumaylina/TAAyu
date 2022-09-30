@@ -3,7 +3,7 @@
 #Modified Date : 
 Feature: TSMP002 Admin cari data nama modul
 
-Background :
+Background:
 	Given Admin harus klik field search Data Modul pada halaman Data Modul
 	
   @tag1
