@@ -1,6 +1,5 @@
 package com.sqa.psikotes.framework.runner;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
@@ -26,8 +25,8 @@ public class TestSearchModul {
 		extentTest = SceneHooks.extentTest;
 	}
 	
-	@Given("Admin harus klik field search Data Modul pada halaman Data Modul")
-	public void admin_harus_klik_field_search_data_modul_pada_halaman_data_modul() {
+	@Given("TSMP002 Admin harus klik field search Data Modul pada halaman Data Modul")
+	public void tsmp002_admin_harus_klik_field_search_data_modul_pada_halaman_data_modul() {
 		driver.get(Constants.URL);
 		modulPage.clickOK();
 		modulPage.clickMenuTask();

@@ -1,8 +1,7 @@
-package com.sqa.psikotes.framework.page;
+//Author : Ayu
+//Created-date: 29-09-2022 13.00
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
+package com.sqa.psikotes.framework.page;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -47,11 +46,67 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//td[@id='tl_dis_agree--52812-cell-0-1']")
 	private WebElement msgSearch; //Logika
 	
+	//Locator AddModul
 	@FindBy(xpath = "//span[normalize-space()='+ Add Modul']")
 	private WebElement btnAddModul;
 		
+	@FindBy(id="tl_add_modul--53182_text")
+	private WebElement namaModul;
 	
-	//scenario
+	@FindBy(id="tl_add_modul--53206_text")
+	private WebElement tipeModul;
+	
+	@FindBy(id="tl_add_modul--53183_text")
+	private WebElement waktuPengerjaan;
+	
+	@FindBy(id="tl_add_modul--53184_text")
+	private WebElement jumlahSoal;
+	
+	@FindBy(id="tl_add_modul--53185_text")
+	private WebElement kategori;
+	
+	@FindBy(id="tl_add_modul--53207_text")
+	private WebElement deskripsi;
+	
+	@FindBy(id="tl_add_modul--53186_text")
+	private WebElement status;
+	
+	@FindBy(xpath = "//span[normalize-space()='+ Add Modul']")
+	private WebElement btnSave;
+	
+	//LocatorShowData
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[1]/a")
+	private WebElement pageOne;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[2]/a")
+	private WebElement pageTwo;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[3]/a")
+	private WebElement pageThree;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[4]/a")
+	private WebElement pageFour;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[5]/a")
+	private WebElement pageFive;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[6]/a")
+	private WebElement pageSix;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li/a")
+	private WebElement pagePrevious;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[8]/a")
+	private WebElement pageNext;
+	
+	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[8]")
+	private WebElement txtShowData;
+	
+	////div[@id='tl_dis_agree--52812']/div[8]
+//	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[8]")
+//	private WebElement pilihSepuluh;
+	
+	//scenarioMenu
 	public void clickMenuTask() {
 		menuTask.click();
 	}
@@ -64,18 +119,15 @@ public class ModulPage extends LoginPage {
 	public String getTxtModul() {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return msgModul.getAttribute("value");
-		
 	}
 	
 	//SEARCH 
 	public void clickSearch() {
-		
 		tabSearch.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void search(String search) {
-		
 		this.tabSearch.sendKeys(search);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -97,4 +149,40 @@ public class ModulPage extends LoginPage {
 		return msgSearch.getText();
 	}
 	
+	public void clickPageOne() {
+		pageOne.click();
+	}
+	
+	public void clickPageTwo() {
+		pageTwo.click();
+	}
+	
+	public void clickPageThree() {
+		pageThree.click();
+	}
+	
+	public void clickPageFour() {
+		pageFour.click();
+	}
+	
+	public void clickPageFive() {
+		pageFive.click();
+	}
+	
+	public void clickPageSix() {
+		pageSix.click();
+	}
+	
+	public void clickPagePrevious() {
+		pagePrevious.click();
+	}
+	
+	public void clickPageNext() {
+		pageNext.click();
+	}
+	
+	public String getTxtPage() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtShowData.getText();
+	}
 }

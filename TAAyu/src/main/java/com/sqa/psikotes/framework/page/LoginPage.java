@@ -42,7 +42,7 @@ public class LoginPage {
 	
 	
 	
-	public void loginValid(String username, String password) throws InterruptedException {
+	public void loginValidTwo(String username, String password) throws InterruptedException {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(username);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);

@@ -4,7 +4,7 @@
 Feature: TSMP002 Admin cari data nama modul
 
 Background:
-	Given Admin harus klik field search Data Modul pada halaman Data Modul
+	Given TSMP002 Admin harus klik field search Data Modul pada halaman Data Modul
 	
   @tag1
   Scenario: TSMP002001 Admin cari data berdasarkan nama modul menggunakan enter pada keyboard

@@ -4,7 +4,7 @@
 
 Feature: TSMP001 Admin masuk ke halaman modul
 Background:
-	    Given Admin harus membuka halaman utama web
+	    Given TSMP001 Admin harus membuka halaman utama web
 
   @tag1
   Scenario: TSMP001001 Admin buka halaman modul

@@ -9,7 +9,7 @@ public class Constants {
 	public static final String OPERA = "Opera";
 	public static final String IE = "Internet Explorer";
 	public static final String SAFARI = "Safari";
-	public static final String URL = "https://sqa.peluangkerjaku.com/psy/#";
+	public static final String URL = "https://sqa.peluangkerjaku.com/psy/";
 	public static final String GLOB_PARAM_DELAY = "y";
 	
 	

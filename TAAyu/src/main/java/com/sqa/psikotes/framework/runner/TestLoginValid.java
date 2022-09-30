@@ -38,7 +38,7 @@ public class TestLoginValid {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
-		loginPage.loginValid(username, password);
+		loginPage.loginValidTwo(username, password);
 		extentTest.log(LogStatus.PASS, "admin_valid_username_and_password");
 
 	}
