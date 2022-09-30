@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,22 +64,24 @@ public class ModulPage extends LoginPage {
 	public String getTxtModul() {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return msgModul.getAttribute("value");
+		
 	}
 	
 	//SEARCH 
-	public void search(String search) {
+	public void clickSearch() {
+		
+		tabSearch.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void search(String search) {
+		
 		this.tabSearch.sendKeys(search);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void enter() {
-		try {
-			Robot rbt = new Robot();
-			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-			rbt.keyPress(KeyEvent.VK_ENTER);
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
+		this.tabSearch.sendKeys(Keys.ENTER);
 	}
 	
 	public void clickBtnSearch() {
@@ -90,7 +93,8 @@ public class ModulPage extends LoginPage {
 	}
 	
 	public String getTxtSearch() {
-		return msgModul.getText();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return msgSearch.getText();
 	}
 	
 }

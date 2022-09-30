@@ -49,10 +49,8 @@ public class LoginPage {
 		this.txtPassword.sendKeys(password);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnSignIn.click();
-		Thread.sleep(2000);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnOk.click();
-		Thread.sleep(2000);
 		
 	}
 	
@@ -62,6 +60,13 @@ public class LoginPage {
 	
 	public void clickButtonOk() {
 		btnOk.click();
+	}
+	
+	public void clickOK() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnOk);
+		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		btnOk.click();
+		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
 	}
 }
 

@@ -27,7 +27,7 @@ public class TestOpenModul {
 		extentTest = SceneHooks.extentTest;
 	}
 
-	@Given("TSMP001001 admin berhasil login")
+	@Given("Admin harus membuka halaman utama web")
 	public void admin_go_to_page_login() throws InterruptedException {
 		driver.get(Constants.URL);
 		modulPage.loginValid("developer", "23");
@@ -48,7 +48,7 @@ public class TestOpenModul {
 	
 	@Then("TSMP001001 admin berhasil buka halaman modul")
 	public void tsmp001001_admin_berhasil_buka_halaman_modul() {
-	    modulPage.clickSubmenuModul();
+//	    modulPage.clickSubmenuModul();
 	    assertTrue(modulPage.getTxtModul().contains("Modul"));
 	    extentTest.log(LogStatus.PASS, "admin_berhasil_buka halaman_modul");
 	}

@@ -19,7 +19,6 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class SceneHooks {
-
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
