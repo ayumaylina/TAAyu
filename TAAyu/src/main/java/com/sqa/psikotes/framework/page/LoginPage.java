@@ -27,6 +27,8 @@ public class LoginPage {
 	@FindBy(xpath="//button[@id='51552_query']/span")
 	private WebElement btnSignIn;
 	
+	@FindBy(xpath="//span[normalize-space()='DEVELOPER']")
+	private WebElement btnAccount;
 	
 	@FindBy(id="tl_login-1-51550_finder")
 	private WebElement btnGreenUsername;
@@ -34,12 +36,21 @@ public class LoginPage {
 	@FindBy(id="tl_login-1-51551_finder")
 	private WebElement btnGreenPassword;
 	
+	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='TIDAK'])[1]/following::span[1]")
+	private WebElement btnTidak;
+	
 	@FindBy(id="nikita-form-dialog-tag")
 	private WebElement txtWelcome;
 	
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnOk;
 	
+	public void loginValidOne(String username, String password) {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUsername.sendKeys(username);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtPassword.sendKeys(password);
+	}
 	
 	
 	public void loginValidTwo(String username, String password) throws InterruptedException {
@@ -54,7 +65,18 @@ public class LoginPage {
 		
 	}
 	
+	public void logout() {
+		btnOk.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnAccount.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnTidak.click();
+	}
+	
+	
+	//Click Method
 	public void clickBtnSignIn() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnSignIn.click();
 	}
 	

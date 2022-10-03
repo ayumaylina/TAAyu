@@ -14,7 +14,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestOpenModul {
+public class TestOpenModulValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
@@ -22,7 +22,7 @@ public class TestOpenModul {
 	//private LoginPage loginPage = new LoginPage ();
 	private ModulPage modulPage = new ModulPage ();
 	
-	public TestOpenModul() {
+	public TestOpenModulValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
