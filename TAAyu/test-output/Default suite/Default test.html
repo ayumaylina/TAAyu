@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 03 08:35:31 WIB 2022</td>
+<td>Started on:</td><td>Mon Oct 03 11:53:49 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>111 seconds (111299 ms)</td>
+<tr><td>Total time:</td><td>97 seconds (97087 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,245 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005004 Admin menampilkan25 data modul pada page pertama", "TSMP005 Admin lihat25 data Modul Page"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=cfb3f67d-892b-4a51-bc65-abf945ae30a5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPagePreviousI(ModulPage.java:205)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005004_admin_klik_button_page(TestShow25DataMPValid.java:74)
-	at ✽.TSMP005004 admin klik button page &lt;&lt;(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1631826609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1631826609'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=cfb3f67d-892b-4a51-bc65-abf945ae30a5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPagePreviousI(ModulPage.java:205)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005004_admin_klik_button_page(TestShow25DataMPValid.java:74)
-	at ✽.TSMP005004 admin klik button page &lt;&lt;(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:26)
-</pre></div></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005003 Admin menampilkan25 data modul pada page ke2", "TSMP005 Admin lihat25 data Modul Page"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=df0d2241-765a-427a-a26c-152db5ef7792}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li[3]/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPageTwoI(ModulPage.java:181)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005003_admin_klik_button_page2(TestShow25DataMPValid.java:62)
-	at ✽.TSMP005003 admin klik button page2(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:21)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2012480396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2012480396'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=df0d2241-765a-427a-a26c-152db5ef7792}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li[3]/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPageTwoI(ModulPage.java:181)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005003_admin_klik_button_page2(TestShow25DataMPValid.java:62)
-	at ✽.TSMP005003 admin klik button page2(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:21)
-</pre></div></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP006002 Admin menampilkan50 data modul pada page ke1", "TSMP006 Admin lihat50 data Modul Page"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestShow50DataMPValid.tsmp006002_tampil50_data_modul_pada_page_ke1(TestShow50DataMPValid.java:56)
-	at ✽.TSMP006002 Tampil50 data modul pada page ke1(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/191MPShow50DataValid.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1843272693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1843272693'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestShow50DataMPValid.tsmp006002_tampil50_data_modul_pada_page_ke1(TestShow50DataMPValid.java:56)
-	at ✽.TSMP006002 Tampil50 data modul pada page ke1(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/191MPShow50DataValid.feature:17)
-</pre></div></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005002 Admin menampilkan25 data modul pada page terakhir", "TSMP005 Admin lihat25 data Modul Page"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=5566a4cf-f7da-4999-997f-6b4e8f814be6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li[5]/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPageNextI(ModulPage.java:213)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005002_admin_klik_button_page(TestShow25DataMPValid.java:50)
-	at ✽.TSMP005002 admin klik button page &gt;&gt;(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace776817954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace776817954'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=106.0.5249.91)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;DESKTOP-BIUCLJH&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bffe84ddd13f2aee57b0c6ad30b7b0cc, clickElement {id=5566a4cf-f7da-4999-997f-6b4e8f814be6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\nexsoft\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50842/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bffe84ddd13f2aee57b0c6ad30b7b0cc)] -&gt; xpath: //div[@id=&apos;tl_dis_agree--52812&apos;]/div[9]/ul/li[5]/a]
-Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.ModulPage.clickPageNextI(ModulPage.java:213)
-	at com.sqa.psikotes.framework.runner.TestShow25DataMPValid.tsmp005002_admin_klik_button_page(TestShow25DataMPValid.java:50)
-	at ✽.TSMP005002 admin klik button page &gt;&gt;(file:///C:/Users/nexsoft/git/TAAyu/TAAyu/src/main/resources/features/188MPShow25DataValid.feature:16)
-</pre></div></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -315,29 +76,74 @@ Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004002 Admin menampilkan10 data modul pada page ke2", "TSMP004 Admin cari data nama modul"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002001 Admin cari data berdasarkan nama modul menggunakan enter pada keyboard", "TSMP002 Admin cari data nama modul"</td>
 <td></td>
 <td>6</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004003 Admin menampilkan10 data modul pada page ke3", "TSMP004 Admin cari data nama modul"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004007 Admin menampilkan10 data modul pada page paling awal", "TSMP004 Admin cari data nama modul"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004005 Admin menampilkan10 data modul pada page ke5", "TSMP004 Admin cari data nama modul"</td>
 <td></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002003 Admin cari data berdasarkan nama modul menggunakan button search", "TSMP002 Admin cari data nama modul"</td>
-<td></td>
-<td>8</td>
+<td>4</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004006 Admin menampilkan10 data modul pada page paling terakhir", "TSMP004 Admin cari data nama modul"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004001 Admin menampilkan10 data modul pada page ke1", "TSMP004 Admin cari data nama modul"</td>
+<td></td>
+<td>4</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004003 Admin menampilkan10 data modul pada page ke3", "TSMP004 Admin cari data nama modul"</td>
+<td></td>
+<td>4</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002002 Admin cari data berdasarkan nama modul menggunakan button hijau", "TSMP002 Admin cari data nama modul"</td>
+<td></td>
+<td>6</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005004 Admin menampilkan25 data modul pada page pertama", "TSMP005 Admin lihat25 data Modul Page"</td>
+<td></td>
+<td>6</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002003 Admin cari data berdasarkan nama modul menggunakan button search", "TSMP002 Admin cari data nama modul"</td>
+<td></td>
+<td>6</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005003 Admin menampilkan25 data modul pada page ke2", "TSMP005 Admin lihat25 data Modul Page"</td>
+<td></td>
+<td>6</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004002 Admin menampilkan10 data modul pada page ke2", "TSMP004 Admin cari data nama modul"</td>
+<td></td>
+<td>4</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP001001 Admin buka halaman modul", "TSMP001 Admin masuk ke halaman modul"</td>
+<td></td>
+<td>12</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005001 Admin menampilkan25 data modul pada page ke1", "TSMP005 Admin lihat25 data Modul Page"</td>
+<td></td>
+<td>6</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP006002 Admin menampilkan50 data modul pada page ke1", "TSMP006 Admin lihat50 data Modul Page"</td>
+<td></td>
+<td>3</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP006001 Admin menampilkan50 data modul", "TSMP006 Admin lihat50 data Modul Page"</td>
@@ -345,39 +151,14 @@ Session ID: bffe84ddd13f2aee57b0c6ad30b7b0cc
 <td>6</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002002 Admin cari data berdasarkan nama modul menggunakan button hijau", "TSMP002 Admin cari data nama modul"</td>
-<td></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP001001 Admin buka halaman modul", "TSMP001 Admin masuk ke halaman modul"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP002001 Admin cari data berdasarkan nama modul menggunakan enter pada keyboard", "TSMP002 Admin cari data nama modul"</td>
-<td></td>
-<td>7</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004001 Admin menampilkan10 data modul pada page ke1", "TSMP004 Admin cari data nama modul"</td>
-<td></td>
-<td>6</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005001 Admin menampilkan25 data modul pada page ke1", "TSMP005 Admin lihat25 data Modul Page"</td>
-<td></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004004 Admin menampilkan10 data modul pada page ke4", "TSMP004 Admin cari data nama modul"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP004007 Admin menampilkan10 data modul pada page paling awal", "TSMP004 Admin cari data nama modul"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSMP005002 Admin menampilkan25 data modul pada page terakhir", "TSMP005 Admin lihat25 data Modul Page"</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 </table><p>
 </body>

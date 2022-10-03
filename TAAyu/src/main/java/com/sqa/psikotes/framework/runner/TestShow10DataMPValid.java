@@ -32,7 +32,7 @@ public class TestShow10DataMPValid {
 	@Given("TSMP004 Admin memilih icon show page10")
 	public void tsmp004_admin_memilih_icon_show_page10() {
 		driver.get(Constants.URL);
-		modulPage.clickOK();
+		modulPage.clickOk();
 		modulPage.clickMenuTask();
 		modulPage.clickSubmenuModul();
 	}

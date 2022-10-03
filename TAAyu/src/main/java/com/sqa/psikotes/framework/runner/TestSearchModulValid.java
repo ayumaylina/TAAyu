@@ -28,7 +28,7 @@ public class TestSearchModulValid {
 	@Given("TSMP002 Admin harus klik field search Data Modul pada halaman Data Modul")
 	public void tsmp002_admin_harus_klik_field_search_data_modul_pada_halaman_data_modul() {
 		driver.get(Constants.URL);
-		modulPage.clickOK();
+		modulPage.clickOk();
 		modulPage.clickMenuTask();
 		modulPage.clickSubmenuModul();
 		modulPage.clickSearch();

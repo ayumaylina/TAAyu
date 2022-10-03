@@ -3,13 +3,12 @@
 
 package com.sqa.psikotes.framework.page;
 
-import java.awt.AWTException;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.sqa.psikotes.framework.connection.DriverSingleton;
 import com.sqa.psikotes.framework.constant.Constants;
@@ -46,55 +45,37 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//input[@id='tl_dis_agree--52808_text']")
 	private WebElement tabSearch;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[1]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[2]//a[1]")
 	private WebElement pageOne;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[2]/a")
-	private WebElement pageOneI;
-	
-	//@FindBy(xpath = "/div[9]/ul[1]/li[2]/a[1]") 
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul[1]/li[2]/a[1]")
-	private WebElement pageOneII;
-	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[2]/a")
-	private WebElement pageOneIII;
-	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[2]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[3]//a[1]")
 	private WebElement pageTwo;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[3]/a")
-	private WebElement pageTwoI;
 	
-	//@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[3]/a") 
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[3]/a")
-	private WebElement pageTwoII;
-	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[3]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[4]//a[1]")
 	private WebElement pageThree;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[4]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[5]//a[1]")
 	private WebElement pageFour;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[5]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[6]//a[1]")
 	private WebElement pageFive;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[6]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[7]//a[1]")
 	private WebElement pageSix;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li/a")
-	private WebElement pagePrevious;
+	@FindBy(xpath = "//div[4]//ul[1]//li[1]//a[1]")
+	private WebElement pagePrevious; 
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li/a")
-	private WebElement pagePreviousI;
+//	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li/a")
+//	private WebElement pagePreviousI;
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[8]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[8]//a[1]")
 	private WebElement pageNext; 
 	
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[5]/a")
+	@FindBy(xpath = "//div[4]//ul[1]//li[3]//a[1]")
 	private WebElement pageNextI; 
-	////div[@id='tl_dis_agree--52812']/div[9]/ul/li[4]/a
-	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[9]/ul/li[4]/a")
-	private WebElement pageNextII;  
+	
 	
 	//Dropdown
 	@FindBy(xpath = "//select[@id='tl_dis_agree--52812_show_text']")
@@ -117,8 +98,6 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[8]")
 	private WebElement txtShowData;
 	
-//	@FindBy(xpath = "//div[@id='tl_dis_agree--52812']/div[8]") //div[@id='tl_dis_agree--52812']/div[8]
-//	private WebElement txtShowDataII;
 	
 	//Locator AddModul	
 	@FindBy(id="tl_add_modul--53182_text")
@@ -168,17 +147,10 @@ public class ModulPage extends LoginPage {
 		pageOne.click();
 	}
 	
-	public void clickPageOneI() {
-		pageOneI.click();
-	}
-	
 	public void clickPageTwo() {
 		pageTwo.click();
 	}
 	
-	public void clickPageTwoI() {
-		pageTwoI.click();
-	}
 	
 	public void clickPageThree() {
 		pageThree.click();
@@ -200,9 +172,6 @@ public class ModulPage extends LoginPage {
 		pagePrevious.click();
 	}
 	
-	public void clickPagePreviousI() {
-		pagePreviousI.click();
-	}
 	
 	public void clickPageNext() {
 		pageNext.click();
@@ -214,23 +183,23 @@ public class ModulPage extends LoginPage {
 	
 	public void clickDropJumlahData() {
 		Utils.scrollDownByVisibleElement(dropJumlahData, driver);
-//		try {
-//			Utils.zoomOut(1);
-//		} catch (AWTException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		dropJumlahData.click();
+	}
+	// SELECT
+	public void selectTwentyFive() {
+		dropJumlahData.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropJumlahData).selectByVisibleText("25");
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		dropJumlahData.click();
 	}
 	
-	public void selectTwentyFive() {
-		//Utils.scrollDownByVisibleElement(dropJumlahData, driver);
-		selectTwentyFive.click();
-	}
-	
 	public void selectFifty() {
-		Utils.scrollDownByVisibleElement(dropJumlahData, driver);
-		selectFifty.click();
+		dropJumlahData.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropJumlahData).selectByVisibleText("50");
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		dropJumlahData.click();
 	}
 	
 	//Insert

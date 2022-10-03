@@ -1,3 +1,11 @@
+/*
+ * Author : Runanto
+ * Created date : 29/09/2022
+ * Modifer: Runanto
+ * Modifed Data : 01/10/2022
+ *
+ */
+
 package com.sqa.psikotes.framework.runner;
 
 import java.io.IOException;
@@ -19,17 +27,27 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class SceneHooks {
+
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
+	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+	private String testReport = "";
+	
 
 	@Before
 	public void setUp() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		PSIKOTESScene[] tests = PSIKOTESScene.values();
-		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
-		Utils.testCount++;
+		testReport = tests[Utils.testCount].getTestName();
+		extentTest = reports.startTest(testReport);
+		if(Utils.countOutline==DATA_OUTLINE[Utils.testCount])
+		{
+			Utils.countOutline=0;
+			Utils.testCount++;
+		}
+		Utils.countOutline++;
 	}
 	
 	
@@ -47,6 +65,7 @@ public class SceneHooks {
 		reports.endTest(extentTest);
 		reports.flush();
 	}
+	
 	
 
 	
