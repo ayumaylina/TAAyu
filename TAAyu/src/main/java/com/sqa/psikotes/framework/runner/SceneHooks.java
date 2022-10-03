@@ -1,8 +1,8 @@
 /*
  * Author : Runanto
  * Created date : 29/09/2022
- * Modifer: Runanto
- * Modifed Data : 01/10/2022
+ * Modifer: Ayu (DATA OUTLINE)
+ * Modifed Data : 03/10/2022
  *
  */
 
@@ -32,7 +32,7 @@ public class SceneHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,20,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+	private static final int[] DATA_OUTLINE = {1,1,1,1,20,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 	private String testReport = "";
 	
 

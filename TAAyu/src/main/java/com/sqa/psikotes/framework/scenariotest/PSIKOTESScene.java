@@ -24,7 +24,10 @@ public enum PSIKOTESScene {
 	A016("TSMP005004 Admin menampilkan25 data modul pada page pertama"),//1
 	
 	A017("TSMP006001 Admin menampilkan50 data modul"),//1
-	A018("TSMP006002 Admin menampilkan50 data modul pada page ke1");//1
+	A018("TSMP006002 Admin menampilkan50 data modul pada page ke1"),//1
+	
+	A019("TSMP008001 Admin menampilkan100 data modul"),//1
+	A020("TSMP006002 Admin menampilkan100 data modul pada page ke1");//1
 	
 	private String testName;
 	

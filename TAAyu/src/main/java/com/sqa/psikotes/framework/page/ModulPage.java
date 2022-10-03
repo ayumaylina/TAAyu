@@ -114,6 +114,9 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//option[@value='50']")
 	private WebElement selectFifty;
 	
+	@FindBy(xpath = "//option[@value='100']")
+	private WebElement selectAHundred;
+	
 	//Validation
 	@FindBy(xpath = "//td[@id='tl_dis_agree--52812-cell-0-1']")
 	private WebElement msgSearch; //Leader
@@ -231,6 +234,14 @@ public class ModulPage extends LoginPage {
 		dropJumlahData.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		new Select(dropJumlahData).selectByVisibleText("50");
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		dropJumlahData.click();
+	}
+	
+	public void selectAHundred() {
+		dropJumlahData.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropJumlahData).selectByVisibleText("100");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		dropJumlahData.click();
 	}
