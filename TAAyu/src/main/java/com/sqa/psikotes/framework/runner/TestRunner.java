@@ -6,6 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 features = {"src/main/resources/features/176MPOPenMPValid.feature",
 			"src/main/resources/features/179MPSearchMPValid.feature",
+			"src/main/resources/features/182MPAddMPValid.feature",
 			"src/main/resources/features/185MPShow10DataValid.feature",
 			"src/main/resources/features/188MPShow25DataValid.feature",
 			"src/main/resources/features/191MPShow50DataValid.feature"},
