@@ -32,7 +32,17 @@ public class SceneHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,20,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+	private static final int[] DATA_OUTLINE = {1,
+												1,1,1,
+												20,
+												1,1,1,1,1,1,1,
+												1,1,1,1,
+												1,1,
+												1,1,
+												12,
+												1,
+												2,
+												10};
 	private String testReport = "";
 	
 

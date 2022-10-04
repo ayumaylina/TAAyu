@@ -17,14 +17,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestShow10DataMPValid {
+public class TestMPShow10DataMPValid {
 
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
 	private ModulPage modulPage = new ModulPage ();
 	
-	public TestShow10DataMPValid() {
+	public TestMPShow10DataMPValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}

@@ -13,13 +13,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestShow25DataMPValid {
+public class TestMPShow25DataMPValid {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
 	private ModulPage modulPage = new ModulPage ();
 	
-	public TestShow25DataMPValid() {
+	public TestMPShow25DataMPValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
