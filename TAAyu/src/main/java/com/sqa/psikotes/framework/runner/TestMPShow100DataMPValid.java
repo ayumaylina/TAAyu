@@ -30,6 +30,7 @@ public class TestMPShow100DataMPValid {
 		modulPage.clickOk();
 		modulPage.clickMenuTask();
 		modulPage.clickSubmenuModul();
+		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman modul");
 	}
 
 	@When("TSMP008001 admin klik dropdown show data100")

@@ -31,7 +31,7 @@ public class TestMPOpenModulValid {
 	public void tsmp001_admin_go_to_page_login() throws InterruptedException {
 		driver.get(Constants.URL);
 		modulPage.loginValidTwo("developer", "23");
-		extentTest.log(LogStatus.PASS, "Admin go to main page");
+		extentTest.log(LogStatus.PASS, "Admin membuka halaman utama web");
 	}
 
 	@When("TSMP001001 admin klik menu task")

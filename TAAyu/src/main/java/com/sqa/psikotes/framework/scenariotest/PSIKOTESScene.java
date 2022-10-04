@@ -44,8 +44,14 @@ public enum PSIKOTESScene {
 	
 	A023("TSMP011 Admin membuat soal Enum"),//2
 	//2
-	A024("TSMP012 Admin membuat soal Esai Length");//10
+	
+	A024("TSMP012 Admin membuat soal Esai Length"),//10
 	//10
+	
+	A025("TSMP007 Admin Hapus modul");//1
+	//1
+	
+	
 	private String testName;
 	
 	private PSIKOTESScene(String value) {

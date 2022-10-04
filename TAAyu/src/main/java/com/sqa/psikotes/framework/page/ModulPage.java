@@ -75,8 +75,8 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='NO'])[1]/following::span[1]")
 	private WebElement btnOkAddModul; 
 	
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[2]/div[6]/table[1]/tbody[1]/tr[10]/td[10]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/div[1]/img[1]")
-	private WebElement btnHapusModul; //btnhapus di page4 no terakhir
+//	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[2]/div[6]/table[1]/tbody[1]/tr[10]/td[10]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/div[1]/img[1]")
+//	private WebElement btnHapusModul; //btnhapus di page4 no terakhir
 	
 	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='NO'])[1]/following::span[1]")
 	private WebElement btnOkHapusModul;
@@ -93,6 +93,11 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//button[@id='53143_query']/span")
 	private WebElement btnAddSoalPilihanGanda;
 	
+	@FindBy(xpath = "//td[4]/div/img")
+	private WebElement btnHapusModul;
+	
+	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
+	private WebElement btnIyaHapus;
 	
 	//Field Add Modul	
 	@FindBy(id="tl_add_modul--53182_text")
@@ -179,6 +184,9 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
 	private WebElement txtAddSoalPilihanGanda; 
+	
+	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
+	private WebElement txtHapusModul; //sama xpathnya dgn txtaddsoalpg
 	
 	//CLICK
 	public void clickMenuTask() {
@@ -279,6 +287,16 @@ public class ModulPage extends LoginPage {
 	
 	public void clickBtnAddSoal() {
 		btnAddSoalPilihanGanda.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnHapusModul() {
+		btnHapusModul.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnIyaHapus() {
+		btnIyaHapus.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
@@ -466,6 +484,12 @@ public class ModulPage extends LoginPage {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtAddSoalPilihanGanda);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtAddSoalPilihanGanda.getText();
+	}
+	
+	public String getTxtHapusModul() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtHapusModul);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtHapusModul.getText();
 	}
 	
 	

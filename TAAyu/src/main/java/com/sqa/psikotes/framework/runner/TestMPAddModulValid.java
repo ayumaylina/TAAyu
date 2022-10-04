@@ -32,6 +32,7 @@ public class TestMPAddModulValid {
 		modulPage.clickMenuTask();
 		modulPage.clickSubmenuModul();
 		modulPage.clickBtnAddModul();
+		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add data modul");
 	}
 
 	@When("^TSMP003 Admin klik input (.*), (.*), (.*), (.*) dan (.*)$")

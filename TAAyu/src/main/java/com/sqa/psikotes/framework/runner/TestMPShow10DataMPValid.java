@@ -35,6 +35,7 @@ public class TestMPShow10DataMPValid {
 		modulPage.clickOk();
 		modulPage.clickMenuTask();
 		modulPage.clickSubmenuModul();
+		extentTest.log(LogStatus.PASS, "Admin memilih icon show page10");
 	}
 
 	@When("TSMP004001 admin klik button page1")
