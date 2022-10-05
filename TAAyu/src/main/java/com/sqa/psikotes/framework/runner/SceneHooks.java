@@ -43,7 +43,11 @@ public class SceneHooks {
 												4,
 												8,
 												22,
+												6,
 												1,
+												1,1,1,1,
+												1,1,1,1,1,1,
+												1,1
 //												18
 												};
 	private String testReport = "";

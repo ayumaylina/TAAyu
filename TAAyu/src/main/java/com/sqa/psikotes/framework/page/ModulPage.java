@@ -148,6 +148,7 @@ public class ModulPage extends LoginPage {
 	@FindBy(id="tl_template_soal--53152_text")
 	private WebElement fPilihanGandaE;
 	
+	
 	//@FindBy(xpath="//input[@id='tl_template_soal--53161_text']")
 	@FindBy(id="tl_template_soal--53161_text")
 	private WebElement fUploadGambar;
@@ -186,6 +187,9 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(id="tl_template_soal--53167_text")
 	private WebElement dropScoreEsaiLength;
+	
+	@FindBy(id="tl_template_soal--53146_text")
+	private WebElement dropKunciJawabanPilihanAB;
 	
 	//select
 	@FindBy(xpath = "//option[@value='25']")
@@ -540,6 +544,24 @@ public class ModulPage extends LoginPage {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		dropScoreEsaiLength.click();
 		
+		if (!gambar.equals("")) {
+			uploadGambar(gambar);
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnUploadGambar.click();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnCekGambar.click();
+			Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		}
+	}
+	
+	public void insertAddSoalPilihanAB(String kunciJawaban, String gambar) {
+		fPilihanGandaA.click();
+		this.fPilihanGandaA.sendKeys("Melati");
+		fPilihanGandaB.click();
+		this.fPilihanGandaB.sendKeys("Mawar");
+		this.dropKunciJawabanPilihanAB.sendKeys(kunciJawaban);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		dropKunciJawabanPilihanAB.click();
 		if (!gambar.equals("")) {
 			uploadGambar(gambar);
 			Utils.delay(1, Constants.GLOB_PARAM_DELAY);

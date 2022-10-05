@@ -8,7 +8,7 @@ public enum PSIKOTESScene {
 	A002("TSMP002001 Admin cari data berdasarkan nama modul menggunakan enter pada keyboard"),//1
 	A003("TSMP002002 Admin cari data berdasarkan nama modul menggunakan button hijau"),//1
 	A004("TSMP002003 Admin cari data berdasarkan nama modul menggunakan button search"),//1
-//	//{1,1,1}
+	//{1,1,1}
 	
 	A005("TSMP003 Admin menambah modul"),//20
 	//20
@@ -20,7 +20,7 @@ public enum PSIKOTESScene {
 	A010("TSMP004005 Admin menampilkan10 data modul pada page ke5"),//1
 	A011("TSMP004006 Admin menampilkan10 data modul pada page paling terakhir"),//1
 	A012("TSMP004007 Admin menampilkan10 data modul pada page paling awal"),//1
-//	//{1,1,1,1,1,1,1}
+	//{1,1,1,1,1,1,1}
 	
 	A013("TSMP005001 Admin menampilkan25 data modul pada page ke1"),//1
 	A014("TSMP005002 Admin menampilkan25 data modul pada page terakhir"),//1
@@ -48,11 +48,31 @@ public enum PSIKOTESScene {
 	A024("TSMP012 Admin membuat soal Esai Length"),//22
 	//22
 	
-	A025("TSMP007 Admin Hapus modul"),//1
+	A025("TSMP012 Admin membuat soal Pilihan AB"), //6
+	
+	A026("TSMP007 Admin Hapus modul"),//1
 	//1
 	
-	A026("TSMP018 Admin Edit modul");//3
-	//
+	B101("TSMP019001 Admin klik icon plus"),//1
+	B102("TSMP019002 Admin input deskripsi soal"),//1
+	B103("TSMP019003 Admin input ketentuan soal"),//1
+	B104("TSMP019004 Admin input deskripsi soal dan ketentuan soal"),//1
+//	1,1,1,1
+	
+	B105("TSMP020001 Admin klik edit deskripsi"),//1
+	B106("TSMP020002 Admin edit deskripsi soal"),//1
+	B107("TSMP020003 Admin edit ketentuan soal"),//1
+	B108("TSMP020004 Admin edit deskripsi soal dan ketentuan soal"),//1
+	B109("TSMP020005 Admin mengosongkan Deskripsi modul"),//1
+	B110("TSMP020006 Admin mengosongkan Ketentuan soal"),//1
+//	1,1,1,1,1,1
+	
+	B111("TSMP021001 Admin klik icon delete"),//1
+	B112("TSMP021002 Admin delete deskripsi");//1
+//	1,1
+	
+	//A026("TSMP018 Admin Edit modul");//18
+	//18
 	
 	private String testName;
 	
