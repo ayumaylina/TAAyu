@@ -18,11 +18,17 @@ public class TestMPAddSoalPilihanGandaValid {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
+	private boolean isGambarEmpty;
+	
+	private String strGambar;
+	
 	private ModulPage modulPage = new ModulPage ();
 	
 	public TestMPAddSoalPilihanGandaValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
+		
+		this.isGambarEmpty = true;
 	}
 	
 	@Given("TSMP009 Admin berhasil membuka form add soal pilihan ganda")
@@ -38,9 +44,17 @@ public class TestMPAddSoalPilihanGandaValid {
 		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal pilihan ganda");
 	}
 
-	@When("^TSMP009 Admin input soal, pilihan A, pilihan B, pilihan C, pilihan D, pilihan E, (.*)$")
-	public void tsmp009_admin_input_soal_pilihan_a_pilihan_b_pilihan_c_pilihan_d_pilihan_e_kunci_jawaban_dan_file_gambar(String kunci_jawaban) {
-	    modulPage.insertAddSoalPilihanGanda(kunci_jawaban);
+	@When("^TSMP009 Admin input soal, pilihan A, pilihan B, pilihan C, pilihan D, pilihan E, (.*) dan (.*)$")
+	public void tsmp009_admin_input_soal_pilihan_a_pilihan_b_pilihan_c_pilihan_d_pilihan_e_kunci_jawaban_dan_file_gambar(String kunci_jawaban, String gambar) {
+	    
+		if (gambar.equals("")) {
+			 modulPage.insertAddSoalPilihanGanda(kunci_jawaban, gambar);
+	    }
+		else {
+
+		    gambar = System.getProperty("user.dir")+gambar;
+		    modulPage.insertAddSoalPilihanGanda(kunci_jawaban, gambar);
+		}
 	    extentTest.log(LogStatus.PASS, "Admin input Soal Pilihan Ganda");
 	}
 

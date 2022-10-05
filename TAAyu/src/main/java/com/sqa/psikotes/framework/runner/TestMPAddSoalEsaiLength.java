@@ -38,9 +38,18 @@ public class TestMPAddSoalEsaiLength {
 		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal Esai Length");
 	}
 
-	@When("^TSMP012 Admin input soal dan (.*)$")
-	public void tsmp012_admin_input_soal_dan_score(String score) {
-		 modulPage.insertAddSoalEsaiLength(score);
+	@When("^TSMP012 Admin input soal dan (.*) dan (.*)$")
+	public void tsmp012_admin_input_soal_dan_score_dan_gambar(String score, String gambar) {
+		if (gambar.equals("")) {
+			 modulPage.insertAddSoalEsaiLength(score, gambar);
+			 System.out.println("tidak ada gambar");
+	    }
+		else {
+			 System.out.println(" ada gambar");
+		    gambar = System.getProperty("user.dir")+gambar;
+		    modulPage.insertAddSoalEsaiLength(score, gambar);
+		}
+		//modulPage.insertAddSoalEsaiLength(score);
 		    extentTest.log(LogStatus.PASS, "Admin berhasil input soal dan score");
 	}
 

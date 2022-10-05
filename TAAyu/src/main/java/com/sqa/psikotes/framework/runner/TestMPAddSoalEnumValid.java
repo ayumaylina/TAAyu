@@ -18,11 +18,17 @@ public class TestMPAddSoalEnumValid {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
+	private boolean isGambarEmpty;
+	
+	private String strGambar;
+	
 	private ModulPage modulPage = new ModulPage ();
 	
 	public TestMPAddSoalEnumValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
+		
+		this.isGambarEmpty = true;
 	}
 	
 	@Given("TSMP011 Admin berhasil membuka form add soal Enum")
@@ -38,9 +44,18 @@ public class TestMPAddSoalEnumValid {
 		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal Enum");
 	}
 
-	@When("^TSMP011 Admin input soal dan (.*)$")
-	public void tsmp011_admin_input_soal_dan_kunci_jawaban(String kunci_jawaban) {
-	    modulPage.insertAddSoalEnum(kunci_jawaban);
+	@When("^TSMP011 Admin input soal dan (.*) dan (.*)$")
+	public void tsmp011_admin_input_soal_dan_kunci_jawaban_dan_gambar(String kunci_jawaban, String gambar) {
+		if (gambar.equals("")) {
+			 modulPage.insertAddSoalEnum(kunci_jawaban, gambar);;
+			 System.out.println("tidak ada gambar");
+	    }
+		else {
+			 System.out.println(" ada gambar");
+		    gambar = System.getProperty("user.dir")+gambar;
+		    modulPage.insertAddSoalEnum(kunci_jawaban, gambar);;
+		}
+		//modulPage.insertAddSoalEnum(kunci_jawaban, gambar);
 	    extentTest.log(LogStatus.PASS, "Admin berhasil input soal dan kunci jawaban");
 	}
 

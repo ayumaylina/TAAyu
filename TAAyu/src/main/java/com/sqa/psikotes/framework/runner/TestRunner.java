@@ -17,6 +17,7 @@ features = {
 			"src/main/resources/features/206MPAddSoalEnumValid.feature",
 			"src/main/resources/features/209MPAddSoalEsaiLengthValid.feature",
 			"src/main/resources/features/194MPDeleteModulValid.feature"},
+//			"src/main/resources/features/227MPEditModulValid.feature"},
 glue = "com.sqa.psikotes.framework.runner",
 monochrome=true,
 plugin = {"pretty","html:target/psikotes/htmlreport/PSIKOTESRunner.html",

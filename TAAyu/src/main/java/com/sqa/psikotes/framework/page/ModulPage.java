@@ -99,6 +99,14 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnIyaHapus;
 	
+	@FindBy(xpath = "//td[3]/div/img")
+	private WebElement btnEditModul;
+	
+	@FindBy(xpath = "//button[@id='53292_query']/span")
+	private WebElement btnUpdateModul;
+	
+	
+	
 	//Field Add Modul	
 	@FindBy(id="tl_add_modul--53182_text")
 	private WebElement fnamaModul;
@@ -140,11 +148,31 @@ public class ModulPage extends LoginPage {
 	@FindBy(id="tl_template_soal--53152_text")
 	private WebElement fPilihanGandaE;
 	
-	@FindBy(xpath="//input[@id='tl_template_soal--53161_text']")
+	//@FindBy(xpath="//input[@id='tl_template_soal--53161_text']")
+	@FindBy(id="tl_template_soal--53161_text")
 	private WebElement fUploadGambar;
 	
-	//HapusModul
+	//EditModul
+	@FindBy(id="tl_edit_modul--53273_text")
+	private WebElement fEditNamaModul;
 	
+	@FindBy(id="tl_edit_modul--53297_text")
+	private WebElement fEditTipeModul;
+	
+	@FindBy(id="tl_edit_modul--53274_text")
+	private WebElement fEditWaktuPengerjaan;
+	
+	@FindBy(id="tl_edit_modul--53275_text")
+	private WebElement fEditJumlahSoal;
+	
+	@FindBy(id="tl_edit_modul--53276_text")
+	private WebElement fEditKategori;
+	
+	@FindBy(id="tl_edit_modul--53298_text")
+	private WebElement fEditDeskripsi;
+	
+	@FindBy(id="tl_edit_modul--53277_text")
+	private WebElement fEditStatus;
 	
 	//Dropdown
 	@FindBy(xpath = "//select[@id='tl_dis_agree--52812_show_text']")
@@ -187,6 +215,9 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
 	private WebElement txtHapusModul; //sama xpathnya dgn txtaddsoalpg
+	
+	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
+	private WebElement txtUpdateModul; //sama xpathnya dgn txtaddsoalpg
 	
 	//CLICK
 	public void clickMenuTask() {
@@ -300,6 +331,16 @@ public class ModulPage extends LoginPage {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnUpdateModul() {
+		btnUpdateModul.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnEditModul() {
+		btnEditModul.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
 	// SELECT
 	public void selectTwentyFive() {
 		dropJumlahData.click();
@@ -379,7 +420,6 @@ public class ModulPage extends LoginPage {
 	}
 	
 	public void insertAddModul(String nama_modul, String tipe_modul, String kategori, String deskripsi, String status_modul) {
-//		fnamaModul.click();
 		this.fnamaModul.sendKeys(nama_modul);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		ftipeModul.click();
@@ -387,46 +427,75 @@ public class ModulPage extends LoginPage {
 		//this.ftipeModul.sendKeys(tipe_modul);
 		new Select(ftipeModul).selectByVisibleText(tipe_modul);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		ftipeModul.click();
-//		fwaktuPengerjaan.click();
 		this.fwaktuPengerjaan.sendKeys("90");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fjumlahSoal.click();
 		this.fjumlahSoal.sendKeys("20");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		fkategori.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		//this.fkategori.sendKeys(kategori);
 		new Select(fkategori).selectByVisibleText(kategori);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fkategori.click();
-//		fdeskripsi.click();
 		this.fdeskripsi.sendKeys(deskripsi);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		fstatus.click();
-		//this.fstatus.sendKeys(status_modul);
 		new Select(fstatus).selectByVisibleText(status_modul);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fstatus.click();
 	}
 	
-	public void insertAddSoalPilihanGanda(String kunciJawaban) {
-		this.fsoal.sendKeys("Ketik Soal");
+	public void uploadGambar(String gambar) {
+		this.fUploadGambar.sendKeys(gambar);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		fPilihanGandaA.click();
+	}
+	
+	public void insertAddSoalPilihanGanda(String kunciJawaban, String gambar) {
+		fsoal.click();
+		this.fsoal.sendKeys("Ketik Soal terakhir sumpah");
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.fPilihanGandaA.sendKeys("pilihanA");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		fPilihanGandaB.click();
 		this.fPilihanGandaB.sendKeys("pilihanB");
-		fPilihanGandaC.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.fPilihanGandaC.sendKeys("pilihanC");
-		fPilihanGandaD.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.fPilihanGandaD.sendKeys("pilihanD");
-		fPilihanGandaE.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.fPilihanGandaE.sendKeys("pilihanE");
 		dropKunciJawaban.click();
 		new Select(dropKunciJawaban).selectByVisibleText(kunciJawaban);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		
+		//this.fUploadGambar.sendKeys(gambar);
+		
+		if (!gambar.equals("")) {
+			uploadGambar(gambar);
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnUploadGambar.click();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnCekGambar.click();
+			Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		}
+		
+//		btnAddSoalPilihanGanda.click();
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+		
+		
+//		this.fsoal.sendKeys("Ketik Soal");
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		fPilihanGandaA.click();
+//		this.fPilihanGandaA.sendKeys("pilihanA");
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		fPilihanGandaB.click();
+//		this.fPilihanGandaB.sendKeys("pilihanB");
+//		fPilihanGandaC.click();
+//		this.fPilihanGandaC.sendKeys("pilihanC");
+//		fPilihanGandaD.click();
+//		this.fPilihanGandaD.sendKeys("pilihanD");
+//		fPilihanGandaE.click();
+//		this.fPilihanGandaE.sendKeys("pilihanE");
+//		dropKunciJawaban.click();
+//		new Select(dropKunciJawaban).selectByVisibleText(kunciJawaban);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 //		fUploadGambar.click();
 //		this.fUploadGambar.sendKeys(fileGambar);
 //		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
@@ -434,26 +503,79 @@ public class ModulPage extends LoginPage {
 //		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 //		btnUploadGambar.click();
 //		btnCekGambar.click();
-	}
+//	}
 	
-	public void insertAddSoalEsaiFreeText() {
+	
+	
+	public void insertAddSoalEsaiFreeText(String gambar) {
 		this.fsoal.sendKeys("Ketik Soal");
+		if (!gambar.equals("")) {
+			uploadGambar(gambar);
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnUploadGambar.click();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnCekGambar.click();
+			Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		}
 	}
 	
-	public void insertAddSoalEnum(String kunci_jawaban) {
+	public void insertAddSoalEnum(String kunci_jawaban, String gambar) {
 		this.fsoal.sendKeys("Ketik Soal");
 		this.dropKunciJawabanEnum.sendKeys(kunci_jawaban);
 		dropKunciJawabanEnum.click();
+		if (!gambar.equals("")) {
+			uploadGambar(gambar);
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnUploadGambar.click();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnCekGambar.click();
+			Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		}
 	}
 	
-	public void insertAddSoalEsaiLength(String score) {
+	public void insertAddSoalEsaiLength(String score, String gambar) {
 		this.fsoal.sendKeys("Ketik Soal");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.dropScoreEsaiLength.sendKeys(score);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		dropScoreEsaiLength.click();
+		
+		if (!gambar.equals("")) {
+			uploadGambar(gambar);
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnUploadGambar.click();
+			Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+			btnCekGambar.click();
+			Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		}
 	}
 	
+	public void editModul(String nama_modul, String tipe_modul, String waktu_pengerjaan, String jumlah_soal, String kategori, String deskripsi, String status_modul) {
+		fEditNamaModul.clear();
+		this.fEditNamaModul.sendKeys(nama_modul);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		fEditTipeModul.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		//this.ftipeModul.sendKeys(tipe_modul);
+		new Select(fEditTipeModul).selectByVisibleText(tipe_modul);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		fEditWaktuPengerjaan.clear();
+		this.fEditWaktuPengerjaan.sendKeys(waktu_pengerjaan);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		fEditJumlahSoal.clear();
+		this.fEditJumlahSoal.sendKeys(jumlah_soal);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		fEditKategori.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(fEditKategori).selectByVisibleText(kategori);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		//fEditDeskripsi.clear();
+		this.fEditDeskripsi.sendKeys(deskripsi);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		fEditStatus.click();
+		new Select(fEditStatus).selectByVisibleText(status_modul);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
 	//Validation
 	public String getTxtModul() {
@@ -492,6 +614,10 @@ public class ModulPage extends LoginPage {
 		return txtHapusModul.getText();
 	}
 	
-	
+	public String getTxtEditModul() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUpdateModul);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtUpdateModul.getText();
+	}
 	
 }

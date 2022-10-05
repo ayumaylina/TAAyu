@@ -39,18 +39,20 @@ public enum PSIKOTESScene {
 	A021("TSMP009 Admin membuat soal pilihan ganda"),//12
 	//12
 	
-	A022("TSMP010 Admin membuat soal Esai Free Text"),//1
+	A022("TSMP010 Admin membuat soal Esai Free Text"),//4
+	//4
+	
+	A023("TSMP011 Admin membuat soal Enum (Ya/Tidak)"),//8
+	//8
+	
+	A024("TSMP012 Admin membuat soal Esai Length"),//22
+	//22
+	
+	A025("TSMP007 Admin Hapus modul"),//1
 	//1
 	
-	A023("TSMP011 Admin membuat soal Enum"),//2
-	//2
-	
-	A024("TSMP012 Admin membuat soal Esai Length"),//10
-	//10
-	
-	A025("TSMP007 Admin Hapus modul");//1
-	//1
-	
+	A026("TSMP018 Admin Edit modul");//3
+	//
 	
 	private String testName;
 	

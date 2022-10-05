@@ -18,11 +18,17 @@ public class TestMPAddSoalEsaiFreeText {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
+	private boolean isGambarEmpty;
+	
+	private String strGambar;
+	
 	private ModulPage modulPage = new ModulPage ();
 	
 	public TestMPAddSoalEsaiFreeText() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
+		
+		this.isGambarEmpty = true;
 	}
 	
 	@Given("TSMP010 Admin berhasil membuka form add soal Esai Free Text")
@@ -38,9 +44,18 @@ public class TestMPAddSoalEsaiFreeText {
 		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal esai free text");
 	}
 
-	@When("TSMP010 Admin input soal")
-	public void tsmp010_admin_input_soal() {
-	    modulPage.insertAddSoalEsaiFreeText();
+	@When("^TSMP010 Admin input soal dan (.*)$")
+	public void tsmp010_admin_input_soal_dan_gambar(String gambar) {
+		if (gambar.equals("")) {
+			 modulPage.insertAddSoalEsaiFreeText(gambar);
+			 System.out.println("tidak ada gambar");
+	    }
+		else {
+			 System.out.println(" ada gambar");
+		    gambar = System.getProperty("user.dir")+gambar;
+		    modulPage.insertAddSoalEsaiFreeText(gambar);
+		}
+		//modulPage.insertAddSoalEsaiFreeText(gambar);
 	    extentTest.log(LogStatus.PASS, "Admin input soal");
 	}
 
