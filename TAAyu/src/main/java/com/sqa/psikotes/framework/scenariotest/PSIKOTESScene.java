@@ -33,7 +33,7 @@ public enum PSIKOTESScene {
 //	1,1
 	
 	A019("TSMP008001 Admin menampilkan100 data modul"),//1
-	A020("TSMP006002 Admin menampilkan100 data modul pada page ke1"),//1
+	A020("TSMP008002 Admin menampilkan100 data modul pada page ke1"),//1
 	//1,1
 	
 	A021("TSMP009 Admin membuat soal pilihan ganda"),//12
@@ -52,6 +52,13 @@ public enum PSIKOTESScene {
 	
 	A026("TSMP007 Admin Hapus modul"),//1
 	//1
+	
+	A027("TSMP017001 Admin ingin menghapus soal pilihan ganda"),//1
+	A028("TSMP017002 Admin ingin menghapus soal esai free text"),//1
+	A029("TSMP017003 Admin ingin menghapus soal enum"),//1
+	A030("TSMP017004 Admin ingin menghapus soal esai length"),//1
+	A031("TSMP017005 Admin ingin menghapus soal pilihan ab"),//1
+	//1,1,1,1,1
 	
 	B101("TSMP019001 Admin klik icon plus"),//1
 	B102("TSMP019002 Admin input deskripsi soal"),//1

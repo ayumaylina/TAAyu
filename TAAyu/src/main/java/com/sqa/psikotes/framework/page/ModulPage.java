@@ -105,7 +105,8 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//button[@id='53292_query']/span")
 	private WebElement btnUpdateModul;
 	
-	
+	@FindBy(xpath = "//td[7]/div/table/tbody/tr/td[2]/div/img")
+	private WebElement btnHapusSoal;
 	
 	//Field Add Modul	
 	@FindBy(id="tl_add_modul--53182_text")
@@ -222,6 +223,9 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
 	private WebElement txtUpdateModul; //sama xpathnya dgn txtaddsoalpg
+	
+	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
+	private WebElement txtHapusSoal;
 	
 	//CLICK
 	public void clickMenuTask() {
@@ -342,6 +346,11 @@ public class ModulPage extends LoginPage {
 	
 	public void clickBtnEditModul() {
 		btnEditModul.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnHapusSoalPG() {
+		btnHapusSoal.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
@@ -482,34 +491,6 @@ public class ModulPage extends LoginPage {
 //		btnAddSoalPilihanGanda.click();
 //		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
-		
-		
-//		this.fsoal.sendKeys("Ketik Soal");
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fPilihanGandaA.click();
-//		this.fPilihanGandaA.sendKeys("pilihanA");
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fPilihanGandaB.click();
-//		this.fPilihanGandaB.sendKeys("pilihanB");
-//		fPilihanGandaC.click();
-//		this.fPilihanGandaC.sendKeys("pilihanC");
-//		fPilihanGandaD.click();
-//		this.fPilihanGandaD.sendKeys("pilihanD");
-//		fPilihanGandaE.click();
-//		this.fPilihanGandaE.sendKeys("pilihanE");
-//		dropKunciJawaban.click();
-//		new Select(dropKunciJawaban).selectByVisibleText(kunciJawaban);
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		fUploadGambar.click();
-//		this.fUploadGambar.sendKeys(fileGambar);
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		this.fUploadGambar.sendKeys(Keys.ENTER);
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		btnUploadGambar.click();
-//		btnCekGambar.click();
-//	}
-	
-	
 	
 	public void insertAddSoalEsaiFreeText(String gambar) {
 		this.fsoal.sendKeys("Ketik Soal");
