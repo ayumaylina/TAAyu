@@ -48,16 +48,26 @@ public enum PSIKOTESScene {
 	A024("TSMP012 Admin membuat soal Esai Length"),//22
 	//22
 	
-	A025("TSMP012 Admin membuat soal Pilihan AB"), //6
+	A025("TSMP013 Admin membuat soal Pilihan AB"), //6
 	
-	A026("TSMP007 Admin Hapus modul"),//1
+	A026("TSMP014 Admin ingin edit soal pilihan ganda"),//41
+	//41
+	
+	A027("TSMP015001 Admin ingin edit soal esai free text"),//1
+	A028("TSMP015002 Admin ingin edit soal esai length"),//21
+	//1,21
+	
+	A029("TSMP016 Admin ingin edit soal enum"),//5
+	//5
+	
+	A030("TSMP007 Admin Hapus modul"),//1
 	//1
 	
-	A027("TSMP017001 Admin ingin menghapus soal pilihan ganda"),//1
-	A028("TSMP017002 Admin ingin menghapus soal esai free text"),//1
-	A029("TSMP017003 Admin ingin menghapus soal enum"),//1
-	A030("TSMP017004 Admin ingin menghapus soal esai length"),//1
-	A031("TSMP017005 Admin ingin menghapus soal pilihan ab"),//1
+	A031("TSMP017001 Admin ingin menghapus soal pilihan ganda"),//1
+	A032("TSMP017002 Admin ingin menghapus soal esai free text"),//1
+	A033("TSMP017003 Admin ingin menghapus soal enum"),//1
+	A034("TSMP017004 Admin ingin menghapus soal esai length"),//1
+	A035("TSMP017005 Admin ingin menghapus soal pilihan ab"),//1
 	//1,1,1,1,1
 	
 	B101("TSMP019001 Admin klik icon plus"),//1
@@ -75,8 +85,11 @@ public enum PSIKOTESScene {
 //	1,1,1,1,1,1
 	
 	B111("TSMP021001 Admin klik icon delete"),//1
-	B112("TSMP021002 Admin delete deskripsi");//1
+	B112("TSMP021002 Admin delete deskripsi"),//1
 //	1,1
+	
+	A036("TSMP022 Admin ingin edit soal pilihan ab");//7
+	//7
 	
 	//A026("TSMP018 Admin Edit modul");//18
 	//18

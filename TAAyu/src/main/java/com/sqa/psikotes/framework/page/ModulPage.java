@@ -108,6 +108,12 @@ public class ModulPage extends LoginPage {
 	@FindBy(xpath = "//td[7]/div/table/tbody/tr/td[2]/div/img")
 	private WebElement btnHapusSoal;
 	
+	@FindBy(xpath = "//td[7]/div/table/tbody/tr/td/div/img")
+	private WebElement btnEditSoalPG;
+	
+	@FindBy(xpath = "//button[@id='53105_query']/span")
+	private WebElement btnUpdateSoalPG;
+	
 	//Field Add Modul	
 	@FindBy(id="tl_add_modul--53182_text")
 	private WebElement fnamaModul;
@@ -176,6 +182,28 @@ public class ModulPage extends LoginPage {
 	@FindBy(id="tl_edit_modul--53277_text")
 	private WebElement fEditStatus;
 	
+	//fieldEditSoalPG
+	@FindBy(id="tl_template_script_edit--53102_text")
+	private WebElement fEditPilihanA;
+	
+	@FindBy(id="tl_template_script_edit--53106_text")
+	private WebElement fEditPilihanB;
+	
+	@FindBy(id="tl_template_script_edit--53164_text")
+	private WebElement fEditPilihanC;
+	
+	@FindBy(id="tl_template_script_edit--53165_text")
+	private WebElement fEditPilihanD;
+	
+	@FindBy(id="tl_template_script_edit--53166_text")
+	private WebElement fEditPilihanE;
+	
+	@FindBy(id="tl_template_script_edit--53087_text")
+	private WebElement fEditSoal;
+	
+	//EditSoalEsai
+	
+	
 	//Dropdown
 	@FindBy(xpath = "//select[@id='tl_dis_agree--52812_show_text']")
 	private WebElement dropJumlahData;
@@ -191,6 +219,18 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(id="tl_template_soal--53146_text")
 	private WebElement dropKunciJawabanPilihanAB;
+	
+	@FindBy(id="tl_template_script_edit--53104_text")
+	private WebElement dropEditKunciJawabanPG;
+	
+	@FindBy(id="tl_template_script_edit--53231_text")
+	private WebElement dropEditScoreEsaiLength;
+	
+	@FindBy(id="tl_template_script_edit--53228_text")
+	private WebElement dropEditKunciJawabanEnum;
+	
+	@FindBy(id="tl_template_script_edit--53104_text")
+	private WebElement dropEditKunciJawabanPilihanAB;
 	
 	//select
 	@FindBy(xpath = "//option[@value='25']")
@@ -226,6 +266,11 @@ public class ModulPage extends LoginPage {
 	
 	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
 	private WebElement txtHapusSoal;
+	
+	@FindBy(xpath = "//div[@id='nikita-form-dialog']/p")
+	private WebElement txtEditSoal;
+	
+	
 	
 	//CLICK
 	public void clickMenuTask() {
@@ -354,6 +399,16 @@ public class ModulPage extends LoginPage {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnEditSoalPG() {
+		btnEditSoalPG.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnUpdateSoalPG() {
+		btnUpdateSoalPG.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
 	// SELECT
 	public void selectTwentyFive() {
 		dropJumlahData.click();
@@ -418,6 +473,13 @@ public class ModulPage extends LoginPage {
 		dropKunciJawabanEnum.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		new Select(dropKunciJawabanEnum).selectByVisibleText(kunciJawaban);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void selectScoreEsaiLength(String score) {
+		dropEditScoreEsaiLength.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropEditScoreEsaiLength).selectByVisibleText(score);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
@@ -580,6 +642,165 @@ public class ModulPage extends LoginPage {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void updateSoal(String soal) {
+		this.fEditSoal.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditSoal.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditSoal.sendKeys(soal);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updatePilihanA(String pilihanA) {
+		this.fEditPilihanA.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanA.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanA.sendKeys(pilihanA);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updatePilihanB(String pilihanB) {
+		this.fEditPilihanB.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanB.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanB.sendKeys(pilihanB);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updatePilihanC(String pilihanC) {
+		this.fEditPilihanC.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanC.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanC.sendKeys(pilihanC);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updatePilihanD(String pilihanD) {
+		this.fEditPilihanD.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanD.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanD.sendKeys(pilihanD);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updatePilihanE(String pilihanE) {
+		this.fEditPilihanE.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanE.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditPilihanE.sendKeys(pilihanE);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updateEditKunciJawabanPG(String kunciJawaban) {
+		dropEditKunciJawabanPG.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropEditKunciJawabanPG).selectByVisibleText(kunciJawaban);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	public void editSoalPG (String soal, String pilihanA, String pilihanB, String pilihanC, String pilihanD, String pilihanE, String kunciJawaban) {
+		if(!soal.equals("")) {
+			updateSoal(soal);
+		}
+		
+		if(!pilihanA.equals("")) {
+			updatePilihanA(pilihanA);
+		}
+		
+		if(!pilihanB.equals("")) {
+			updatePilihanB(pilihanB);
+		}
+		
+		if(!pilihanC.equals("")) {
+			updatePilihanC(pilihanC);
+		}
+		
+		if(!pilihanD.equals("")) {
+			updatePilihanD(pilihanD);
+		}
+		
+		if(!pilihanE.equals("")) {
+			updatePilihanE(pilihanE);
+		}
+		
+		if(!kunciJawaban.equals("")) {
+			updateEditKunciJawabanPG(kunciJawaban);
+		}
+	}
+	
+	public void editSoalEsaiFreeText() {
+		this.fEditSoal.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditSoal.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.fEditSoal.sendKeys("Ubah soal esai");
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updateScoreEsaiLength(String score) {
+		dropEditScoreEsaiLength.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropEditScoreEsaiLength).selectByVisibleText(score);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void editSoalEsaiLength(String soal, String score) {
+		if(!soal.equals("")) {
+			updateSoal(soal);
+		}
+		
+		if(!score.equals("")) {
+			updateScoreEsaiLength(score);
+		}	
+	}
+	
+	public void updateKunciJawabanEnum(String kunciJawaban) {
+		dropEditKunciJawabanEnum.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropEditKunciJawabanEnum).selectByVisibleText(kunciJawaban);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	public void editSoalEnum(String soal, String kunciJawaban) {
+		if(!soal.equals("")) {
+			updateSoal(soal);
+		}
+		
+		if(!kunciJawaban.equals("")) {
+			updateKunciJawabanEnum(kunciJawaban);
+		}	
+	}
+	
+	public void updateKunciJawabanPilihanAB(String kunciJawaban) {
+		dropEditKunciJawabanPilihanAB.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		new Select(dropEditKunciJawabanPilihanAB).selectByVisibleText(kunciJawaban);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	public void editSoalPilihanAB(String pilihanA, String pilihanB, String kunciJawaban) {
+		if(!pilihanA.equals("")) {
+			updatePilihanA(pilihanA);
+		}
+		
+		if(!pilihanB.equals("")) {
+			updatePilihanB(pilihanB);
+		}
+		
+		if(!kunciJawaban.equals("")) {
+			updateKunciJawabanPilihanAB(kunciJawaban);
+		}	
+	}
+	
+	
 	//Validation
 	public String getTxtModul() {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, msgModul);
@@ -621,6 +842,12 @@ public class ModulPage extends LoginPage {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUpdateModul);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtUpdateModul.getText();
+	}
+	
+	public String getTxtEditSoal() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtEditSoal);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtEditSoal.getText();
 	}
 	
 }
