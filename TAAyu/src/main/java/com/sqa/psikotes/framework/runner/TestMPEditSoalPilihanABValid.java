@@ -74,6 +74,6 @@ public class TestMPEditSoalPilihanABValid {
 	public void tsmp022_data_soal_berhasil_di_update() {
 		 modulPage.getTxtEditSoal();
 		 assertTrue(modulPage.getTxtEditSoal().contains("Berhasil"));
-		 extentTest.log(LogStatus.PASS, "Admin berhasil update soal enum");
+		 extentTest.log(LogStatus.PASS, "Admin berhasil update pilihan AB");
 	}
 }

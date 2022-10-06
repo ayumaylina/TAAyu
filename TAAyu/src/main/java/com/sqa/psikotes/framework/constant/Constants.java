@@ -12,7 +12,8 @@ public class Constants {
 	public static final String URL = "https://sqa.peluangkerjaku.com/psy/";
 	public static final String GLOB_PARAM_DELAY = "y";
 	public static final String PC_USER_NAME = "NEXSOFT";
-	
+	public static final String USERNAME_LOGIN = "developer";
+	public static final String PASSWORD_LOGIN = "23";
 	
 	
 }

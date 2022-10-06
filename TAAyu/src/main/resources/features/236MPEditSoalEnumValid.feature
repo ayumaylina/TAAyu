@@ -9,7 +9,7 @@ Feature: TSMP016 Admin edit soal Enum
     When TSMP016 Admin edit <soal> dan <kunciJawaban>
     And TSMP016 Admin klik update soal
     Then TSMP016 Data soal berhasil di update
-#5
+#4
     Examples: 
       | soal      | kunciJawaban |
       |           | Ya           |

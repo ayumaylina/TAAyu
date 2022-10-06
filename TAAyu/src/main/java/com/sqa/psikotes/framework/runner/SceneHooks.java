@@ -43,7 +43,7 @@ public class SceneHooks {
 												4,
 												8,
 												22,
-												6,
+												5, //---diubah
 												41,
 												1,21,
 												5,

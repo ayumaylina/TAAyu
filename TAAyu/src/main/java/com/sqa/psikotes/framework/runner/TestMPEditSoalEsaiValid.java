@@ -102,6 +102,6 @@ public class TestMPEditSoalEsaiValid {
 	public void tsmp015002_data_soal_berhasil_di_update() {
 		modulPage.getTxtEditSoal();
 		assertTrue(modulPage.getTxtEditSoal().contains("Berhasil"));
-		extentTest.log(LogStatus.PASS, "Admin berhasil update soal pilihan ganda");
+		extentTest.log(LogStatus.PASS, "Admin berhasil update soal Esai Length");
 	}
 }

@@ -54,7 +54,7 @@ public class TestMPHapusSoalValid {
 	public void tsmp017001_data_soal_berhasil_dihapus() {
 		modulPage.getTxtHapusModul();
 	    assertTrue(modulPage.getTxtHapusModul().contains("berhasil"));
-	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data modul");
+	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data soal");
 	}
 
 	@Given("TSMP017002 Admin berhasil masuk form template soal esai free text")
@@ -86,7 +86,7 @@ public class TestMPHapusSoalValid {
 	public void tsmp017002_data_soal_berhasil_dihapus() {
 		modulPage.getTxtHapusModul();
 	    assertTrue(modulPage.getTxtHapusModul().contains("berhasil"));
-	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data modul");
+	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data soal");
 	}
 
 	@Given("TSMP017003 Admin berhasil masuk form template soal enum")
@@ -131,7 +131,7 @@ public class TestMPHapusSoalValid {
 		modulPage.search("esailength");
 		modulPage.enter();
 		modulPage.clickBtnBuatSoal();
-		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal Esai Length");
+		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form template soal Esai Length");
 	}
 
 	@When("TSMP017004 Admin klik button hapus")
@@ -150,7 +150,7 @@ public class TestMPHapusSoalValid {
 	public void tsmp017004_data_soal_berhasil_dihapus() {
 		modulPage.getTxtHapusModul();
 	    assertTrue(modulPage.getTxtHapusModul().contains("berhasil"));
-	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data modul");
+	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data soal");
 	}
 
 	@Given("TSMP017005 Admin berhasil masuk form template soal pilihan ab")
@@ -163,7 +163,7 @@ public class TestMPHapusSoalValid {
 		modulPage.search("pilihanA/B");
 		modulPage.enter();
 		modulPage.clickBtnBuatSoal();
-		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form add soal pilihan AB");
+		extentTest.log(LogStatus.PASS, "Admin berhasil membuka form template soal pilihan AB");
 	}
 
 	@When("TSMP017005 Admin klik button hapus")
@@ -182,6 +182,6 @@ public class TestMPHapusSoalValid {
 	public void tsmp017005_data_soal_berhasil_dihapus() {
 		modulPage.getTxtHapusModul();
 	    assertTrue(modulPage.getTxtHapusModul().contains("berhasil"));
-	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data modul");
+	    extentTest.log(LogStatus.PASS, "Admin berhasil menghapus data soal");
 	}
 }

@@ -9,7 +9,7 @@ Feature: TSMP022 Admin edit soal Pilihan AB
     When TSMP022 Admin edit <pilihanA>, <pilihanB> dan <kunciJawaban>
     And TSMP022 Admin klik update soal
     Then TSMP022 Data soal berhasil di update
-
+#7
     Examples: 
       | pilihanA       | pilihanB       | kunciJawaban |
       | ubah pilihan A |                |              |
