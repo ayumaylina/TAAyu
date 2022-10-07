@@ -19,7 +19,7 @@ Feature: TSMP015 Admin edit soal Esai Free Text
 #21
     Examples: 
       | soal      | score |
-      | ubah soal |       |
+      #| ubah soal |       |
       |           |     1 |
       |           |     2 |
       |           |     3 |

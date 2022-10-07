@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.sqa.psikotes.framework.constant.Constants;
-import com.sqa.psikotes.framework.page.ModulPageTambahan;
+import com.sqa.psikotes.framework.page.ModulPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,7 +20,7 @@ import io.cucumber.java.en.When;
 public class TestMPEditDeskripsiValid {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
-	private ModulPageTambahan modulPage = new ModulPageTambahan ();
+	private ModulPage modulPage = new ModulPage();
 	
 	public TestMPEditDeskripsiValid() {
 		driver = SceneHooks.driver;
