@@ -88,8 +88,16 @@ public enum PSIKOTESScene {
 	B112("TSMP021002 Admin delete deskripsi"),//1
 //	1,1
 	
-	A036("TSMP022 Admin ingin edit soal pilihan ab");//7
+	A036("TSMP022 Admin ingin edit soal pilihan ab"),//7
 	//7
+	
+	R021("TSMP018001 Admin edit dua field data modul"), //20
+	R022("TSMP018002 Admin edit tiga field  data modul"), //14
+	R023("TSMP018003 Admin edit empat field  data modull"), //10
+	R024("TSMP018004 Admin edit lima field data modul"), //6
+	R025("TSMP018005 Admin edit enam field data modul"), //3
+	R026("TSMP018006 Admin edit tujuh field data modul"); //1
+	//20, 14, 10, 6, 3,1
 	
 	//A026("TSMP018 Admin Edit modul");//18
 	//18
